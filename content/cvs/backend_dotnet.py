@@ -24,17 +24,17 @@ CV = {
     "skills_en": [
         ("Backend:", "C#, .NET (ASP.NET Core), ABP Framework, Entity Framework Core, REST APIs"),
         ("Auth &amp; Security:", "OpenID Connect / OAuth2, PKCE, client credentials, RBAC, audit logging"),
-        ("Data:", "SQL Server (T-SQL, migrations), PostgreSQL, ClickHouse, data validation"),
+        ("Data:", "SQL Server (T-SQL, migrations), PostgreSQL, ClickHouse, data pipelines &amp; validation"),
         ("Integration:", "Service-to-service APIs, data synchronisation, webhooks"),
-        ("Quality &amp; Ops:", "xUnit, CI test gates, Docker, Linux, monitoring"),
+        ("DevOps &amp; Quality:", "xUnit, CI test gates, Docker, Linux, monitoring"),
         ("Secondary:", "React + TypeScript, Python, Rust"),
     ],
     "skills_vi": [
         ("Backend:", "C#, .NET (ASP.NET Core), ABP Framework, Entity Framework Core, REST API"),
         ("Xác thực &amp; Bảo mật:", "OpenID Connect / OAuth2, PKCE, client credentials, RBAC, nhật ký kiểm toán"),
-        ("Dữ liệu:", "SQL Server (T-SQL, migration), PostgreSQL, ClickHouse, kiểm tra dữ liệu"),
+        ("Dữ liệu:", "SQL Server (T-SQL, migration), PostgreSQL, ClickHouse, pipeline &amp; kiểm tra dữ liệu"),
         ("Tích hợp:", "API service-to-service, đồng bộ dữ liệu, webhook"),
-        ("Chất lượng &amp; Vận hành:", "xUnit, cổng kiểm thử CI, Docker, Linux, giám sát"),
+        ("DevOps &amp; Chất lượng:", "xUnit, cổng kiểm thử CI, Docker, Linux, giám sát"),
         ("Bổ trợ:", "React + TypeScript, Python, Rust"),
     ],
 

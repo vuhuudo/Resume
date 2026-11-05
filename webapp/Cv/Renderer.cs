@@ -90,6 +90,7 @@ public static partial class Renderer
             ["{{AVATAR}}"] = avatar,
             ["{{BADGE}}"] = doc.Badge[lang],
             ["{{CONTACT}}"] = CvLogic.Tx(p.ContactLine, lang),
+            ["{{AVAILABILITY}}"] = p.Availability is { Count: > 0 } av && av.TryGetValue(lang, out var avail) ? avail : "",
             ["{{CONTACTS}}"] = contactItems,
             ["{{L_CONTACT}}"] = Label(lang, "contact"),
             ["{{L_SUMMARY}}"] = Label(lang, "summary"),

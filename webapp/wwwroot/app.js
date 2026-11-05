@@ -12,6 +12,7 @@ function fill(p) {
   $('phone').value = p.phone || ''; $('email').value = p.email || '';
   $('github').value = p.github || ''; $('linkedin').value = p.linkedin || '';
   $('locEn').value = tx(p.location, 'en'); $('locVi').value = tx(p.location, 'vi');
+  $('availEn').value = tx(p.availability, 'en'); $('availVi').value = tx(p.availability, 'vi');
   const je = p.job?.en || {}, jv = p.job?.vi || {};
   $('jobTitleEn').value = je.title || ''; $('jobOrgEn').value = je.org || ''; $('jobMetaEn').value = je.meta || '';
   $('jobTitleVi').value = jv.title || ''; $('jobOrgVi').value = jv.org || ''; $('jobMetaVi').value = jv.meta || '';
@@ -38,6 +39,7 @@ function collect() {
   p.phone = val('phone'); p.email = val('email');
   p.github = val('github'); p.linkedin = val('linkedin');
   p.location = loc;
+  p.availability = mk(val('availEn'), val('availVi'));
   p.avatar = val('avatar');
   p.job = {
     en: { title: val('jobTitleEn'), org: val('jobOrgEn'), meta: val('jobMetaEn') },

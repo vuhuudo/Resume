@@ -62,6 +62,7 @@ def _builtin_profile():
         "job": {k: dict(v) for k, v in builtin.JOB.items()},
         "education": {k: dict(v) for k, v in builtin.EDUCATION.items()},
         "languages": {k: dict(v) for k, v in builtin.LANGUAGES.items()},
+        "availability": dict(builtin.AVAILABILITY),
         "years": b.get("years", {"en": "1.5", "vi": "1,5"}),
         "summary": {
             "en": ("{title} with {years} years of experience building and operating enterprise web "
@@ -126,6 +127,7 @@ def _person(p):
     return SimpleNamespace(
         NAME=p["name"], CONTACT_LINE=p["contact_line"], CONTACT_ITEMS=p["contacts"],
         JOB=p["job"], EDUCATION=p["education"], LANGUAGES=p["languages"],
+        AVAILABILITY=p.get("availability", {}),
         LABELS=builtin.LABELS, icon=builtin.icon,
     )
 

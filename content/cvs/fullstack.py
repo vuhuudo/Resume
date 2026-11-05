@@ -27,30 +27,32 @@ CV = {
     ),
 
     "skills_en": [
-        ("Backend:", "C#, .NET (ASP.NET Core), ABP Framework, Entity Framework Core, REST APIs, "
-                     "OpenID Connect / OAuth2, RBAC"),
-        ("Frontend:", "React, TypeScript, JavaScript, Svelte, Vite, HTML5, CSS3, responsive design"),
-        ("Data:", "SQL Server (T-SQL), PostgreSQL, ClickHouse, Python (Pandas, NumPy), Rust"),
+        ("Languages:", "C#, TypeScript / JavaScript, Python, Rust, SQL, Bash"),
+        ("Backend:", ".NET (ASP.NET Core), ABP Framework, Entity Framework Core, REST APIs"),
+        ("Frontend:", "React, Svelte, Vite, HTML5, CSS3, responsive design"),
+        ("Data &amp; Storage:", "SQL Server (T-SQL), PostgreSQL, ClickHouse, S3, Pandas / NumPy"),
         ("DevOps:", "Docker, Linux, Git, CI/CD, reverse proxy, Prometheus &amp; Grafana, "
                     "backup &amp; restore"),
-        ("AI &amp; Automation:", "Python automation, LLM API integration"),
-        ("Testing:", "xUnit, Vitest, Playwright (automated CI gates)"),
+        ("Auth &amp; Security:", "OpenID Connect / OAuth2, PKCE, RBAC, audit logging"),
+        ("AI &amp; Testing:", "LLM API integration, Python automation · xUnit, Vitest, Playwright "
+                             "(CI gates)"),
     ],
     "skills_vi": [
-        ("Backend:", "C#, .NET (ASP.NET Core), ABP Framework, Entity Framework Core, REST API, "
-                     "OpenID Connect / OAuth2, RBAC"),
-        ("Frontend:", "React, TypeScript, JavaScript, Svelte, Vite, HTML5, CSS3, responsive design"),
-        ("Dữ liệu:", "SQL Server (T-SQL), PostgreSQL, ClickHouse, Python (Pandas, NumPy), Rust"),
+        ("Ngôn ngữ:", "C#, TypeScript / JavaScript, Python, Rust, SQL, Bash"),
+        ("Backend:", ".NET (ASP.NET Core), ABP Framework, Entity Framework Core, REST API"),
+        ("Frontend:", "React, Svelte, Vite, HTML5, CSS3, responsive design"),
+        ("Dữ liệu &amp; Lưu trữ:", "SQL Server (T-SQL), PostgreSQL, ClickHouse, S3, Pandas / NumPy"),
         ("DevOps:", "Docker, Linux, Git, CI/CD, reverse proxy, Prometheus &amp; Grafana, "
                     "backup &amp; restore"),
-        ("AI &amp; Tự động hóa:", "Tự động hóa Python, tích hợp LLM API"),
-        ("Kiểm thử:", "xUnit, Vitest, Playwright (cổng CI tự động)"),
+        ("Xác thực &amp; Bảo mật:", "OpenID Connect / OAuth2, PKCE, RBAC, nhật ký kiểm toán"),
+        ("AI &amp; Kiểm thử:", "Tích hợp LLM API, tự động hóa Python · xUnit, Vitest, Playwright "
+                               "(cổng CI)"),
     ],
 
     "exp_en": [
-        "<b>Full-stack development:</b> Built internal platforms end-to-end — .NET (ABP) APIs, "
-        "React + TypeScript UIs and SQL Server — including an enterprise reporting platform and a "
-        "project-data platform, both in production.",
+        "<b>Full-stack:</b> Built platforms end-to-end — .NET (ABP) APIs, React + TypeScript UIs and "
+        "SQL Server — including an enterprise reporting platform and a project-data platform, both in "
+        "production.",
         "<b>Identity &amp; SSO:</b> Implemented central single sign-on with <b>OpenID Connect / "
         "OAuth2</b>: PKCE flows, service-to-service access, role-based permissions, session management "
         "and audit logging.",
@@ -60,12 +62,14 @@ CV = {
         "<b>DevOps:</b> Operated dev / UAT / production on Docker &amp; Linux: CI/CD with test gates, "
         "monitoring, alerting, backups and rollback-safe releases.",
         "<b>AI &amp; automation:</b> Python and LLM-API workflows that remove repetitive manual "
-        "processing.",
+        "processing for management teams.",
+        "<b>Ownership:</b> Coordinated an internal platform rollout across branch offices and reported "
+        "progress to management.",
     ],
     "exp_vi": [
-        "<b>Phát triển Full Stack:</b> Xây dựng nền tảng nội bộ trọn gói — API .NET (ABP), giao diện "
-        "React + TypeScript, SQL Server — gồm nền tảng báo cáo doanh nghiệp và nền tảng dữ liệu dự án, "
-        "đều đã lên production.",
+        "<b>Full Stack:</b> Xây dựng nền tảng trọn gói — API .NET (ABP), giao diện React + TypeScript, "
+        "SQL Server — gồm nền tảng báo cáo doanh nghiệp và nền tảng dữ liệu dự án, đều đã lên "
+        "production.",
         "<b>Định danh &amp; SSO:</b> Triển khai đăng nhập tập trung <b>OpenID Connect / OAuth2</b>: "
         "luồng PKCE, truy cập giữa các dịch vụ, phân quyền theo vai trò, quản lý phiên và nhật ký "
         "kiểm toán.",
@@ -74,16 +78,23 @@ CV = {
         "~65% thời gian test.",
         "<b>DevOps:</b> Vận hành dev / UAT / production trên Docker &amp; Linux: CI/CD có cổng kiểm "
         "thử, giám sát, cảnh báo, backup và phát hành có rollback.",
-        "<b>AI &amp; tự động hóa:</b> Quy trình Python và LLM API giúp loại bỏ xử lý thủ công lặp lại.",
+        "<b>AI &amp; tự động hóa:</b> Quy trình Python và LLM API giúp loại bỏ xử lý thủ công lặp lại "
+        "cho bộ phận quản lý.",
+        "<b>Trách nhiệm:</b> Điều phối triển khai nền tảng nội bộ tại các chi nhánh và báo cáo tiến độ "
+        "lên quản lý.",
     ],
 
     "projects_en": [
         ("Enterprise reporting platform",
          "ABP / .NET · React · TypeScript · SQL Server · Docker",
-         ["Multi-entity period reporting: data import &amp; validation, approval workflow, dashboards."]),
+         ["Period reporting for <b>dozens of entities</b>: data import &amp; validation, approval "
+          "workflow, dashboards.",
+          "Three-environment delivery with automated tests, health checks and backup/restore "
+          "procedures."]),
         ("Central authentication (SSO) service",
          "ABP / .NET · OpenID Connect · OAuth2 · SQL Server",
-         ["Single sign-on, RBAC, session and audit management for internal applications."]),
+         ["Single sign-on, RBAC, session and audit management for internal applications.",
+          "Service-to-service APIs (user lookup, application members) used by other systems."]),
         ("Data lakehouse &amp; analytics",
          "Python · Rust · ClickHouse · PostgreSQL · Svelte",
          ["Medallion-style pipeline with REST APIs, dashboards and automated tests."]),
@@ -91,10 +102,13 @@ CV = {
     "projects_vi": [
         ("Nền tảng báo cáo doanh nghiệp",
          "ABP / .NET · React · TypeScript · SQL Server · Docker",
-         ["Báo cáo theo kỳ đa đơn vị: nhập &amp; kiểm tra dữ liệu, quy trình duyệt, dashboard."]),
+         ["Báo cáo theo kỳ cho <b>hàng chục đơn vị</b>: nhập &amp; kiểm tra dữ liệu, quy trình duyệt, "
+          "dashboard.",
+          "Vận hành 3 môi trường với kiểm thử tự động, health check và backup/restore."]),
         ("Dịch vụ xác thực tập trung (SSO)",
          "ABP / .NET · OpenID Connect · OAuth2 · SQL Server",
-         ["Đăng nhập một lần, RBAC, quản lý phiên và nhật ký kiểm toán cho các ứng dụng nội bộ."]),
+         ["Đăng nhập một lần, RBAC, quản lý phiên và nhật ký kiểm toán cho các ứng dụng nội bộ.",
+          "API service-to-service (tra cứu người dùng, thành viên ứng dụng) cho các hệ thống khác."]),
         ("Data lakehouse &amp; phân tích",
          "Python · Rust · ClickHouse · PostgreSQL · Svelte",
          ["Pipeline kiểu Medallion với REST API, dashboard và kiểm thử tự động."]),

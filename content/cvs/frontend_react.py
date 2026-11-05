@@ -27,14 +27,14 @@ CV = {
         ("UI patterns:", "Dashboards &amp; data tables, multi-step forms, i18n (vi/en), theming"),
         ("Auth:", "OIDC SPA integration (PKCE), token renewal, session-expiry UX"),
         ("Testing:", "Vitest, Playwright (end-to-end), component tests"),
-        ("Backend &amp; Tools:", "REST APIs, C# / .NET basics, Node.js, pnpm, Git, Docker"),
+        ("Backend &amp; Tools:", "REST APIs, .NET / ABP integration, Git, Docker"),
     ],
     "skills_vi": [
         ("Frontend:", "React, TypeScript, JavaScript, Svelte, Vite, HTML5, CSS3, responsive design"),
         ("Mẫu giao diện:", "Dashboard &amp; bảng dữ liệu, form nhiều bước, i18n (vi/en), theming"),
         ("Xác thực:", "Tích hợp OIDC cho SPA (PKCE), gia hạn token, xử lý hết phiên"),
         ("Kiểm thử:", "Vitest, Playwright (end-to-end), component test"),
-        ("Backend &amp; Công cụ:", "REST API, C# / .NET cơ bản, Node.js, pnpm, Git, Docker"),
+        ("Backend &amp; Công cụ:", "REST API, tích hợp .NET / ABP, Git, Docker"),
     ],
 
     "exp_en": [

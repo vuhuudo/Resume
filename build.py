@@ -122,6 +122,7 @@ def build_html(cv, lang, style, name=None, avatar="avatar.png", person=None):
     labels = pf.LABELS[lang]
     title = cv[f"title_{lang}"]
     display_name = name or pf.NAME[lang]
+    avail = getattr(pf, "AVAILABILITY", None) or {}
     if style == "ats":
         mapping = {
             "{{HTML_LANG}}": lang,
@@ -129,6 +130,7 @@ def build_html(cv, lang, style, name=None, avatar="avatar.png", person=None):
             "{{NAME}}": display_name,
             "{{TITLE}}": title,
             "{{CONTACT}}": pf.CONTACT_LINE[lang],
+            "{{AVAILABILITY}}": avail.get(lang, ""),
             "{{L_SUMMARY}}": labels["summary"],
             "{{SUMMARY}}": cv[f"summary_{lang}"],
             "{{L_SKILLS}}": labels["skills_ats"],
@@ -151,6 +153,7 @@ def build_html(cv, lang, style, name=None, avatar="avatar.png", person=None):
             "{{DOC_TITLE}}": f'{display_name} — {title} — CV',
             "{{NAME}}": display_name,
             "{{AVATAR}}": avatar,
+            "{{AVAILABILITY}}": avail.get(lang, ""),
             "{{BADGE}}": cv[f"badge_{lang}"],
             "{{L_CONTACT}}": labels["contact"],
             "{{CONTACTS}}": render_contacts(lang, pf),

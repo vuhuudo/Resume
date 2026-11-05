@@ -1,5 +1,5 @@
 {
- "_doc": "MẪU HỒ SƠ. Sao chép: uv run cvtui.py --new <id> rồi sửa file profiles/<id>/profile.json (hoặc sửa trong tab Hồ sơ của TUI). Văn bản thuần; **chữ** in đậm. Trường nội dung nhận chuỗi hoặc {\"en\":..,\"vi\":..}. avatar: đường dẫn, tương đối với thư mục này (trống = CV không ảnh). Trong summary, {title} {years} {skills} tự điền. experience/projects/skills: t = tag trong content/bank.json (aliases), m = từ khóa khớp JD, w = trọng số 1-3. Viết dư mục: tool chọn mục khớp role nhất và tự cắt cho vừa 1 trang.",
+ "_doc": "MẪU HỒ SƠ. Sao chép: uv run cvtui.py --new <id> rồi sửa file profiles/<id>/profile.json (hoặc sửa trong tab Hồ sơ của TUI). Văn bản thuần; **chữ** in đậm. Trường nội dung nhận chuỗi hoặc {\"en\":..,\"vi\":..}. avatar: đường dẫn, tương đối với thư mục này (trống = CV không ảnh). availability: dòng \"sẵn sàng nhận việc\" (trống = ẩn). Trong summary, {title} {years} {skills} tự điền. experience/projects/skills: t = tag trong content/bank.json (aliases), m = từ khóa khớp JD, w = trọng số 1-3. Viết dư mục: tool chọn mục khớp role nhất và tự cắt cho vừa 1 trang.",
  "name": {"en": "Your Name", "vi": "Tên Của Bạn"},
  "avatar": "",
  "location": {"en": "City, Country", "vi": "Thành phố, Quốc gia"},
@@ -21,6 +21,7 @@
   "en": {"ats": "Vietnamese (native) · English (intermediate)", "items": [["Vietnamese", "Native"], ["English", "Intermediate"]]},
   "vi": {"ats": "Tiếng Việt (bản ngữ) · Tiếng Anh (trung cấp)", "items": [["Tiếng Việt", "Bản ngữ"], ["Tiếng Anh", "Trung cấp"]]}
  },
+ "availability": {"en": "", "vi": ""},
  "years": {"en": "2", "vi": "2"},
  "summary": {
   "en": "{title} with {years} years of experience building web applications. Hands-on with {skills}.",

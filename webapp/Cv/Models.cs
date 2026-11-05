@@ -17,6 +17,7 @@ public sealed class Profile
     public Dictionary<string, JobInfo> Job { get; set; } = new();
     public Dictionary<string, EducationInfo> Education { get; set; } = new();
     public Dictionary<string, LanguageInfo> Languages { get; set; } = new();
+    public Dictionary<string, string>? Availability { get; set; }
     public Dictionary<string, string> Years { get; set; } = new() { ["en"] = "1", ["vi"] = "1" };
     public Dictionary<string, string> Summary { get; set; } = new();
     public List<Experience> Experience { get; set; } = new();

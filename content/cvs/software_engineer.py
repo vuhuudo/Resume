@@ -24,19 +24,25 @@ CV = {
 
     "skills_en": [
         ("Languages:", "C#, TypeScript / JavaScript, Python, Rust, SQL, Bash"),
-        ("Frameworks:", ".NET (ASP.NET Core), ABP Framework, React, Svelte, Entity Framework Core, REST APIs"),
-        ("Auth &amp; Data:", "OpenID Connect / OAuth2, RBAC, SQL Server, PostgreSQL, ClickHouse"),
-        ("DevOps:", "Docker, Linux, Git, CI/CD, reverse proxy, monitoring &amp; alerting, backup / restore"),
-        ("Quality:", "Automated testing (xUnit, Vitest, Playwright), code review, documentation"),
-        ("AI &amp; Automation:", "Python automation, LLM API integration"),
+        ("Backend &amp; Frontend:", ".NET (ASP.NET Core), ABP Framework, Entity Framework Core, "
+                                   "REST APIs, React, Svelte, Vite"),
+        ("Data &amp; Storage:", "SQL Server (T-SQL), PostgreSQL, ClickHouse, S3, Pandas / NumPy"),
+        ("DevOps:", "Docker, Linux, Git, CI/CD, reverse proxy, Prometheus &amp; Grafana, "
+                    "backup &amp; restore"),
+        ("Auth &amp; Security:", "OpenID Connect / OAuth2, PKCE, RBAC, audit logging"),
+        ("AI &amp; Testing:", "LLM API integration, Python automation · xUnit, Vitest, Playwright "
+                             "(CI gates)"),
     ],
     "skills_vi": [
         ("Ngôn ngữ:", "C#, TypeScript / JavaScript, Python, Rust, SQL, Bash"),
-        ("Framework:", ".NET (ASP.NET Core), ABP Framework, React, Svelte, Entity Framework Core, REST API"),
-        ("Xác thực &amp; Dữ liệu:", "OpenID Connect / OAuth2, RBAC, SQL Server, PostgreSQL, ClickHouse"),
-        ("DevOps:", "Docker, Linux, Git, CI/CD, reverse proxy, giám sát &amp; cảnh báo, backup / restore"),
-        ("Chất lượng:", "Kiểm thử tự động (xUnit, Vitest, Playwright), review code, viết tài liệu"),
-        ("AI &amp; Tự động hóa:", "Tự động hóa bằng Python, tích hợp LLM API"),
+        ("Backend &amp; Frontend:", ".NET (ASP.NET Core), ABP Framework, Entity Framework Core, "
+                                   "REST API, React, Svelte, Vite"),
+        ("Dữ liệu &amp; Lưu trữ:", "SQL Server (T-SQL), PostgreSQL, ClickHouse, S3, Pandas / NumPy"),
+        ("DevOps:", "Docker, Linux, Git, CI/CD, reverse proxy, Prometheus &amp; Grafana, "
+                    "backup &amp; restore"),
+        ("Xác thực &amp; Bảo mật:", "OpenID Connect / OAuth2, PKCE, RBAC, nhật ký kiểm toán"),
+        ("AI &amp; Kiểm thử:", "Tích hợp LLM API, tự động hóa Python · xUnit, Vitest, Playwright "
+                               "(cổng CI)"),
     ],
 
     "exp_en": [
@@ -56,6 +62,10 @@ CV = {
             "Operated dev / UAT / production on Docker &amp; Linux: CI/CD with test gates, monitoring, "
             "alerting, backups and rollback-safe releases."
         ),
+        (
+            "Coordinated an internal platform rollout across branch offices and reported progress to "
+            "management."
+        ),
     ],
     "exp_vi": [
         (
@@ -74,6 +84,9 @@ CV = {
             "Vận hành dev / UAT / production trên Docker &amp; Linux: CI/CD có cổng kiểm thử, giám sát, "
             "cảnh báo, backup và phát hành có rollback."
         ),
+        (
+            "Điều phối triển khai nền tảng nội bộ tại các chi nhánh và báo cáo tiến độ lên quản lý."
+        ),
     ],
 
     "projects_en": [
@@ -82,8 +95,12 @@ CV = {
             "ABP / .NET · React · TypeScript · SQL Server · Docker",
             [
             (
-                "Multi-entity period reporting: data import &amp; validation, approval workflow, "
-                "dashboards."
+                "Period reporting for <b>dozens of entities</b>: data import &amp; validation, "
+                "approval workflow, dashboards."
+            ),
+            (
+                "Three-environment delivery with automated tests, health checks and backup/restore "
+                "procedures."
             ),
             ],
         ),
@@ -92,6 +109,7 @@ CV = {
             "ABP / .NET · OpenID Connect · OAuth2 · SQL Server",
             [
             "Single sign-on, RBAC, session and audit management for internal applications.",
+            "Service-to-service APIs (user lookup, application members) used by other systems.",
             ],
         ),
         (
@@ -107,7 +125,9 @@ CV = {
             "Nền tảng báo cáo doanh nghiệp",
             "ABP / .NET · React · TypeScript · SQL Server · Docker",
             [
-            "Báo cáo theo kỳ đa đơn vị: nhập &amp; kiểm tra dữ liệu, quy trình duyệt, dashboard.",
+            "Báo cáo theo kỳ cho <b>hàng chục đơn vị</b>: nhập &amp; kiểm tra dữ liệu, quy trình duyệt, "
+            "dashboard.",
+            "Vận hành 3 môi trường với kiểm thử tự động, health check và backup/restore.",
             ],
         ),
         (
@@ -115,6 +135,7 @@ CV = {
             "ABP / .NET · OpenID Connect · OAuth2 · SQL Server",
             [
             "Đăng nhập một lần, RBAC, quản lý phiên và nhật ký kiểm toán cho các ứng dụng nội bộ.",
+            "API service-to-service (tra cứu người dùng, thành viên ứng dụng) cho các hệ thống khác.",
             ],
         ),
         (

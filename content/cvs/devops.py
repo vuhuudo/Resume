@@ -45,7 +45,10 @@ CV = {
             "Built and operated the delivery platform for several systems across dev / UAT / production: "
             "Dockerized services and CI/CD with build, test, scan and deploy stages."
         ),
-        "Ran the access layer: reverse proxy with TLS, SSO-protected tools and VPN access.",
+        (
+            "Ran the access layer for internal systems: reverse proxy with TLS, SSO-protected tools "
+            "and VPN access for branch offices."
+        ),
         (
             "Set up monitoring and alerting (Prometheus, Grafana), health checks with auto-restart, "
             "scheduled backups with restore drills and capacity cleanup."
@@ -60,7 +63,10 @@ CV = {
             "Xây dựng và vận hành nền tảng phát hành cho nhiều hệ thống trên dev / UAT / production: dịch "
             "vụ Docker và CI/CD gồm các bước build, test, quét, deploy."
         ),
-        "Vận hành tầng truy cập: reverse proxy với TLS, công cụ bảo vệ bằng SSO và VPN.",
+        (
+            "Vận hành tầng truy cập cho các hệ thống nội bộ: reverse proxy với TLS, công cụ bảo vệ bằng "
+            "SSO và VPN cho các chi nhánh."
+        ),
         (
             "Thiết lập giám sát và cảnh báo (Prometheus, Grafana), health check tự restart, backup định "
             "kỳ kèm diễn tập restore và dọn dung lượng."
