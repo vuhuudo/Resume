@@ -199,6 +199,22 @@ def missing_glyphs(html_text: str, pdf_path) -> list[str]:
     return sorted(w for w in words if w not in pdf)
 
 
+def normalize_pdf(path: Path) -> None:
+    """Chuẩn hoá PDF (bỏ metadata ngày/ID) để build tái lập được — cần qpdf, thiếu thì bỏ qua."""
+    if not shutil.which("qpdf"):
+        return
+    tmp = path.with_suffix(".norm.pdf")
+    try:
+        r = subprocess.run(
+            ["qpdf", "--deterministic-id", "--empty", "--pages", str(path), "--", str(tmp)],
+            capture_output=True,
+        )
+        if r.returncode == 0 and tmp.exists():
+            tmp.replace(path)
+    finally:
+        tmp.unlink(missing_ok=True)
+
+
 def build_pdf(html_path, pdf_path) -> str:
     html_path, pdf_path = Path(html_path), Path(pdf_path)
     subprocess.run(
@@ -206,6 +222,7 @@ def build_pdf(html_path, pdf_path) -> str:
          f"--print-to-pdf={pdf_path}", html_path.as_uri()],
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
     )
+    normalize_pdf(pdf_path)
     try:
         info = subprocess.run(["pdfinfo", str(pdf_path)], capture_output=True, text=True).stdout
         for line in info.splitlines():
