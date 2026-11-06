@@ -6,11 +6,11 @@ NAME = {"en": "Vu Huu Do", "vi": "Vũ Hữu Đô"}
 CONTACT_LINE = {
     "en": (
         "Ho Chi Minh City, Vietnam &bull; +84 347 299 934 &bull; vuhuudo2004@gmail.com "
-        "&bull; github.com/vuhuudo &bull; linkedin.com/in/vũ-hữu-đô-b899bb360"
+        "&bull; github.com/vuhuudo &bull; linkedin.com/in/vuhuudo"
     ),
     "vi": (
         "TP. Hồ Chí Minh, Việt Nam &bull; +84 347 299 934 &bull; vuhuudo2004@gmail.com "
-        "&bull; github.com/vuhuudo &bull; linkedin.com/in/vũ-hữu-đô-b899bb360"
+        "&bull; github.com/vuhuudo &bull; linkedin.com/in/vuhuudo"
     ),
 }
 
@@ -35,14 +35,14 @@ CONTACT_ITEMS = {
         ("phone", "+84 347 299 934"),
         ("mail", '<a href="mailto:vuhuudo2004@gmail.com">vuhuudo2004@gmail.com</a>'),
         ("github", '<a href="https://github.com/vuhuudo">github.com/vuhuudo</a>'),
-        ("linkedin", '<a href="https://www.linkedin.com/in/v%C5%A9-h%E1%BB%AFu-%C4%91%C3%B4-b899bb360/">linkedin.com/in/vũ-hữu-đô-b899bb360</a>'),
+        ("linkedin", '<a href="https://www.linkedin.com/in/vuhuudo/">linkedin.com/in/vuhuudo</a>'),
     ],
     "vi": [
         ("pin", "TP. Hồ Chí Minh, Việt Nam"),
         ("phone", "+84 347 299 934"),
         ("mail", '<a href="mailto:vuhuudo2004@gmail.com">vuhuudo2004@gmail.com</a>'),
         ("github", '<a href="https://github.com/vuhuudo">github.com/vuhuudo</a>'),
-        ("linkedin", '<a href="https://www.linkedin.com/in/v%C5%A9-h%E1%BB%AFu-%C4%91%C3%B4-b899bb360/">linkedin.com/in/vũ-hữu-đô-b899bb360</a>'),
+        ("linkedin", '<a href="https://www.linkedin.com/in/vuhuudo/">linkedin.com/in/vuhuudo</a>'),
     ],
 }
 
