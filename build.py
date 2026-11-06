@@ -3,7 +3,7 @@
 # requires-python = ">=3.10"
 # dependencies = []
 # ///
-"""Build toàn bộ CV: HTML (build/out/) -> PDF (cv/).
+"""Build toàn bộ CV: HTML (build/out/) -> PDF (resumes/).
 
 Nguồn dữ liệu:  content/profile.py  +  content/cvs/*.py
 Mẫu trình bày:  templates/ats.html (1 cột)  và  templates/visual.html (2 cột)
@@ -44,8 +44,8 @@ def find_chrome() -> str:
 CHROME = find_chrome()
 AVATAR = ROOT / "assets" / "avatar.png"
 HTML_OUT = ROOT / "build" / "out"
-PDF_OUT = ROOT / "cv"
-STYLE_NAME = {"ats": "ATS", "visual": "Visual"}
+PDF_OUT = ROOT / "resumes"
+STYLE_SUFFIX = {"ats": "_ATS", "visual": ""}
 TEMPLATES = {
     "ats": (ROOT / "templates" / "ats.html").read_text(encoding="utf-8"),
     "visual": (ROOT / "templates" / "visual.html").read_text(encoding="utf-8"),
@@ -244,7 +244,7 @@ def main() -> int:
         shutil.copytree(ROOT / "assets" / "fonts", html_dir / "fonts", dirs_exist_ok=True)
 
         for lang, style in cv["outputs"]:
-            base = f'CV_VuHuuDo_{cv["file"]}_{lang.upper()}_{STYLE_NAME[style]}'
+            base = f'CV_VuHuuDo_{cv["file"]}_{lang.upper()}{STYLE_SUFFIX[style]}'
             html_path = html_dir / f"{base}.html"
             pdf_path = pdf_dir / f"{base}.pdf"
             html_path.write_text(build_html(cv, lang, style), encoding="utf-8")
@@ -255,14 +255,14 @@ def main() -> int:
             ok = pages == "1" and not lost
             if not ok:
                 failures.append(base)
-            print(f'  {cv["id"]:<18} {lang.upper()} {style:<6} ->  cv/{cv["id"]}/{base}.pdf'
+            print(f'  {cv["id"]:<18} {lang.upper()} {style:<6} ->  {PDF_OUT.name}/{cv["id"]}/{base}.pdf'
                   f'  [{"OK" if ok else f"⚠ {pages} trang/{len(lost)} từ lỗi font"}]')
 
     print()
     if failures:
         print("THẤT BẠI:", ", ".join(failures))
         return 1
-    print(f"Hoàn tất: {sum(len(c['outputs']) for c in CVS)} PDF trong cv/")
+    print(f"Hoàn tất: {sum(len(c['outputs']) for c in CVS)} PDF trong {PDF_OUT.name}/")
     return 0
 
 

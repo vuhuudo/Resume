@@ -7,17 +7,17 @@ Nội dung được viết một lần, sinh ra nhiều bản theo **role** và 
 
 | Ứng tuyển vị trí | Tiếng Anh (ATS) | Tiếng Việt |
 |---|---|---|
-| Full Stack Developer (.NET / React) | `cv/fullstack/CV_VuHuuDo_FullStack_EN_ATS.pdf` | `cv/fullstack/CV_VuHuuDo_FullStack_VI_Visual.pdf` |
-| Software Engineer (tổng quát) | `cv/software-engineer/CV_VuHuuDo_SoftwareEngineer_EN_ATS.pdf` | `cv/software-engineer/CV_VuHuuDo_SoftwareEngineer_VI_Visual.pdf` |
-| Backend Developer (.NET / C#) | `cv/backend-dotnet/CV_VuHuuDo_BackendDotNet_EN_ATS.pdf` | `cv/backend-dotnet/CV_VuHuuDo_BackendDotNet_VI_Visual.pdf` |
-| Frontend Developer (React / TS) | `cv/frontend-react/CV_VuHuuDo_FrontendReact_EN_ATS.pdf` | `cv/frontend-react/CV_VuHuuDo_FrontendReact_VI_Visual.pdf` |
-| DevOps Engineer | `cv/devops/CV_VuHuuDo_DevOps_EN_ATS.pdf` | `cv/devops/CV_VuHuuDo_DevOps_VI_Visual.pdf` |
-| AI & Automation Engineer | `cv/ai-automation/CV_VuHuuDo_AIAutomation_EN_ATS.pdf` | `cv/ai-automation/CV_VuHuuDo_AIAutomation_VI_Visual.pdf` |
+| Full Stack Developer (.NET / React) | `resumes/fullstack/CV_VuHuuDo_FullStack_EN_ATS.pdf` | `resumes/fullstack/CV_VuHuuDo_FullStack_VI.pdf` |
+| Software Engineer (tổng quát) | `resumes/software-engineer/CV_VuHuuDo_SoftwareEngineer_EN_ATS.pdf` | `resumes/software-engineer/CV_VuHuuDo_SoftwareEngineer_VI.pdf` |
+| Backend Developer (.NET / C#) | `resumes/backend-dotnet/CV_VuHuuDo_BackendDotNet_EN_ATS.pdf` | `resumes/backend-dotnet/CV_VuHuuDo_BackendDotNet_VI.pdf` |
+| Frontend Developer (React / TS) | `resumes/frontend-react/CV_VuHuuDo_FrontendReact_EN_ATS.pdf` | `resumes/frontend-react/CV_VuHuuDo_FrontendReact_VI.pdf` |
+| DevOps Engineer | `resumes/devops/CV_VuHuuDo_DevOps_EN_ATS.pdf` | `resumes/devops/CV_VuHuuDo_DevOps_VI.pdf` |
+| AI & Automation Engineer | `resumes/ai-automation/CV_VuHuuDo_AIAutomation_EN_ATS.pdf` | `resumes/ai-automation/CV_VuHuuDo_AIAutomation_VI.pdf` |
 
 - **`_EN_ATS.pdf`** — 1 cột, không ảnh/icon: an toàn khi nộp qua hệ thống tuyển dụng (ATS), LinkedIn, ITviec/TopCV.
-- **`_VI_Visual.pdf`** — 2 cột, có ảnh: gửi email hoặc gặp trực tiếp nhà tuyển dụng Việt Nam.
-- **`_EN_Visual.pdf`** — bản EN 2 cột, có ảnh: gửi email cho nhà tuyển dụng nước ngoài / người đọc tiếng Anh (có ở cả 6 role, vd: `cv/fullstack/CV_VuHuuDo_FullStack_EN_Visual.pdf`).
-- **`cv/linkedin/CV_VuHuuDo_LinkedIn.pdf`** — bản export LinkedIn mới nhất (tham chiếu, cập nhật 11/2026).
+- **`_EN.pdf`** — bản tiếng Anh 2 cột, có ảnh: gửi email cho nhà tuyển dụng nước ngoài / người đọc tiếng Anh (có ở cả 6 role, vd: `resumes/fullstack/CV_VuHuuDo_FullStack_EN.pdf`).
+- **`_VI.pdf`** — bản tiếng Việt 2 cột, có ảnh: gửi email hoặc gặp trực tiếp nhà tuyển dụng Việt Nam.
+- **`resumes/linkedin/CV_VuHuuDo_LinkedIn.pdf`** — bản export LinkedIn mới nhất (tham chiếu, cập nhật 11/2026).
 
 ## Web app (C# / Docker)
 
@@ -57,7 +57,7 @@ Hướng dẫn viết nội dung: [`docs/CV_GUIDE.md`](docs/CV_GUIDE.md). Quy tr
 ```
 ├── README.md
 ├── build.sh                  # lệnh build duy nhất: ./build.sh
-├── build.py                  # sinh HTML (build/out/) và PDF (cv/)
+├── build.py                  # sinh HTML (build/out/) và PDF (resumes/)
 ├── cvtui.py                  # TUI tạo CV theo role/JD đa người dùng (out/, không commit)
 ├── webapp/                   # Web app C# (.NET 10) + Dockerfile
 ├── docker-compose.yml        # docker compose up -d --build -> :8080
@@ -78,7 +78,7 @@ Hướng dẫn viết nội dung: [`docs/CV_GUIDE.md`](docs/CV_GUIDE.md). Quy tr
 ├── assets/
 │   ├── avatar.png            # ảnh dùng chung cho mọi bản
 │   └── fonts/                # Liberation Sans nhúng sẵn — dấu tiếng Việt to, rõ ở mọi môi trường
-├── cv/                       # ĐẦU RA — PDF đã build (commit sẵn để tải/gửi ngay)
+├── resumes/                  # ĐẦU RA — PDF đã build (commit sẵn để tải/gửi ngay)
 ├── build/                    # HTML tạm trong lúc build (không commit)
 └── out/                      # CV sinh bởi cvtui.py (không commit)
 ```
@@ -114,7 +114,7 @@ Nội dung chọn từ `content/bank.json` (ngân hàng nội dung) theo độ k
 ## Chỉnh sửa nội dung
 
 1. Sửa nội dung trong `content/cvs/<role>.py` (hoặc thông tin chung trong `content/profile.py`).
-2. Chạy `./build.sh` — PDF trong `cv/` được cập nhật.
+2. Chạy `./build.sh` — PDF trong `resumes/` được cập nhật.
 3. Commit cả nội dung lẫn PDF.
 
 **Thêm role mới**: tạo `content/cvs/<role>.py` theo mẫu các file có sẵn, rồi thêm vào danh sách `CVS`
