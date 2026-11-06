@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <title>{{DOC_TITLE}}</title>
 <style>
-  /* Font nhúng sẵn trong repo — không phụ thuộc font hệ thống, giữ đúng dấu tiếng Việt ở mọi môi trường. */
-  @font-face { font-family: 'Carlito CV'; src: url('fonts/Carlito-Regular.woff2') format('woff2');
+  /* Font nhúng sẵn trong repo — không phụ thuộc font hệ thống; Liberation Sans (chuẩn Arial)
+     có dấu tiếng Việt to, rõ như khi soạn trên Word. */
+  @font-face { font-family: 'CV Sans'; src: url('fonts/LiberationSans-Regular.woff2') format('woff2');
                font-weight: 400; font-style: normal; }
-  @font-face { font-family: 'Carlito CV'; src: url('fonts/Carlito-Bold.woff2') format('woff2');
+  @font-face { font-family: 'CV Sans'; src: url('fonts/LiberationSans-Bold.woff2') format('woff2');
                font-weight: 700; font-style: normal; }
-  @font-face { font-family: 'Carlito CV'; src: url('fonts/Carlito-Italic.woff2') format('woff2');
+  @font-face { font-family: 'CV Sans'; src: url('fonts/LiberationSans-Italic.woff2') format('woff2');
                font-weight: 400; font-style: italic; }
-  @font-face { font-family: 'Carlito CV'; src: url('fonts/Carlito-BoldItalic.woff2') format('woff2');
+  @font-face { font-family: 'CV Sans'; src: url('fonts/LiberationSans-BoldItalic.woff2') format('woff2');
                font-weight: 700; font-style: italic; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Carlito CV', 'Segoe UI', Calibri, Tahoma, 'Liberation Sans', 'DejaVu Sans', Geneva, Verdana, Arial, 'Noto Sans', sans-serif;
+  body { font-family: 'CV Sans', Arial, 'Liberation Sans', 'DejaVu Sans', 'Noto Sans', sans-serif;
          background-color: #f5f5f5; color: #333; line-height: 1.36; padding: 20px; }
   .resume-container { max-width: 900px; margin: 0 auto; background: #fff; display: flex;
                       box-shadow: 0 0 15px rgba(0,0,0,0.1); }
