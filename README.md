@@ -77,7 +77,7 @@ Hướng dẫn viết nội dung: [`docs/CV_GUIDE.md`](docs/CV_GUIDE.md). Quy tr
 │   └── visual.html           #   bản 2 cột, sidebar
 ├── assets/
 │   ├── avatar.png            # ảnh dùng chung cho mọi bản
-│   └── fonts/                # Carlito nhúng sẵn (SIL OFL) — giữ đúng dấu tiếng Việt ở mọi môi trường
+│   └── fonts/                # Liberation Sans nhúng sẵn — dấu tiếng Việt to, rõ ở mọi môi trường
 ├── cv/                       # ĐẦU RA — PDF đã build (commit sẵn để tải/gửi ngay)
 ├── build/                    # HTML tạm trong lúc build (không commit)
 └── out/                      # CV sinh bởi cvtui.py (không commit)
@@ -122,7 +122,7 @@ trong `content/cvs/__init__.py`.
 
 ## Ghi chú
 
-- **Font nhúng sẵn**: `assets/fonts/` (Carlito, SIL OFL) — mọi renderer (build.py, cvtui, webapp/Docker) dùng đúng font này qua `@font-face`, không phụ thuộc font hệ thống; dấu tiếng Việt (ậ, ệ, ộ…) render giống nhau ở mọi máy.
+- **Font nhúng sẵn**: `assets/fonts/` (Liberation Sans — chuẩn Arial; giấy phép: `assets/fonts/LICENSE-Liberation.txt`) — mọi renderer (build.py, cvtui, webapp/Docker) dùng đúng font này qua `@font-face`, không phụ thuộc font hệ thống; dấu tiếng Việt (ậ, ệ, ộ…) to, rõ ở mọi cỡ chữ.
 - CV chỉ **mô tả chung** (không nêu tên hệ thống nội bộ, số liệu đơn vị, hạ tầng); repo công khai nên không thêm chi tiết nội bộ.
-- Nên đặt LinkedIn custom URL (vd: `linkedin.com/in/vuhuudo`) rồi cập nhật lại trong `content/profile.py`.
+- LinkedIn: `linkedin.com/in/vuhuudo` — khai báo một chỗ trong `content/profile.py`, mọi bản CV tự lấy theo.
 - Nội dung CV là thông tin cá nhân — vui lòng không dùng lại; mã build (`build.py`, `templates/`) tự do tham khảo.
