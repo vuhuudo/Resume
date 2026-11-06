@@ -8,5 +8,6 @@
   <ItemGroup>
     <Content Include="..\templates\*.html" Link="templates\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="..\content\bank.json" Link="content\bank.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\assets\fonts\*" Link="assets\fonts\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

@@ -4,9 +4,18 @@
 <meta charset="UTF-8">
 <title>{{DOC_TITLE}}</title>
 <style>
+  /* Font nhúng sẵn trong repo — không phụ thuộc font hệ thống, giữ đúng dấu tiếng Việt ở mọi môi trường. */
+  @font-face { font-family: 'Carlito CV'; src: url('fonts/Carlito-Regular.woff2') format('woff2');
+               font-weight: 400; font-style: normal; }
+  @font-face { font-family: 'Carlito CV'; src: url('fonts/Carlito-Bold.woff2') format('woff2');
+               font-weight: 700; font-style: normal; }
+  @font-face { font-family: 'Carlito CV'; src: url('fonts/Carlito-Italic.woff2') format('woff2');
+               font-weight: 400; font-style: italic; }
+  @font-face { font-family: 'Carlito CV'; src: url('fonts/Carlito-BoldItalic.woff2') format('woff2');
+               font-weight: 700; font-style: italic; }
   :root { --ink:#161616; --accent:#0b5394; --muted:#4a4a4a; }
   * { box-sizing: border-box; }
-  body { font-family: Calibri, Carlito, 'Segoe UI', 'Liberation Sans', 'DejaVu Sans', Arial, 'Noto Sans', sans-serif; color: var(--ink);
+  body { font-family: 'Carlito CV', Calibri, Carlito, 'Segoe UI', 'Liberation Sans', 'DejaVu Sans', Arial, 'Noto Sans', sans-serif; color: var(--ink);
          font-size: 9.9pt; line-height: 1.26; margin: 0; padding: 0; }
   .page { max-width: 820px; margin: 0 auto; padding: 22px 26px; }
   header { text-align: center; margin-bottom: 6px; }

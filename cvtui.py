@@ -262,6 +262,7 @@ def generate(role, jd="", langs=("EN", "VI"), log=print, name="", title="", avat
     img = "Avatar" + (os.path.splitext(avatar)[1].lower() if avatar else ".png")
     if avatar:
         shutil.copy(avatar, os.path.join(d, img))
+    shutil.copytree(os.path.join(ROOT, "assets", "fonts"), os.path.join(d, "fonts"), dirs_exist_ok=True)
     files, deny = [], denylist()
     for lang in langs:
         who = slug(name or tx(P["name"], lang.lower()))

@@ -18,6 +18,16 @@ public static class Generator
             File.Copy(p.Avatar, Path.Combine(dir, avatar), true);
         }
 
+        // Font nhúng sẵn (không phụ thuộc font hệ thống — giữ đúng dấu tiếng Việt)
+        var fontsSrc = Path.Combine(AppContext.BaseDirectory, "assets", "fonts");
+        if (Directory.Exists(fontsSrc))
+        {
+            var fontsDst = Path.Combine(dir, "fonts");
+            Directory.CreateDirectory(fontsDst);
+            foreach (var f in Directory.GetFiles(fontsSrc))
+                File.Copy(f, Path.Combine(fontsDst, Path.GetFileName(f)), true);
+        }
+
         foreach (var raw in langs)
         {
             var lang = raw.ToLowerInvariant();

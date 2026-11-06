@@ -241,6 +241,7 @@ def main() -> int:
         html_dir.mkdir(parents=True, exist_ok=True)
         pdf_dir.mkdir(parents=True, exist_ok=True)
         shutil.copy(AVATAR, html_dir / "avatar.png")
+        shutil.copytree(ROOT / "assets" / "fonts", html_dir / "fonts", dirs_exist_ok=True)
 
         for lang, style in cv["outputs"]:
             base = f'CV_VuHuuDo_{cv["file"]}_{lang.upper()}_{STYLE_NAME[style]}'

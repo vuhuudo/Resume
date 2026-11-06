@@ -12,14 +12,15 @@ FROM mcr.microsoft.com/dotnet/aspnet:10.0
 
 # Chromium: bản Ubuntu chỉ có snap -> dùng chrome-headless-shell chính thức của Chrome for Testing
 # (cùng engine in PDF, không kéo GTK/X11/DRM của Chrome đầy đủ). Cài + dọn trong 1 layer để không phình image.
-# fonts-liberation đủ dấu tiếng Việt; poppler-utils để đọc PDF tải lên; gosu để hạ quyền sau khi chown /data.
+# fonts-liberation đủ dấu tiếng Việt; fonts-crosextra-carlito để hệ thống khớp font 'Calibri' như máy dev;
+# poppler-utils để đọc PDF tải lên; gosu để hạ quyền sau khi chown /data.
 RUN apt-get update && apt-get install -y --no-install-recommends \
       wget unzip ca-certificates \
       libnss3 libnspr4 libasound2t64 libatk1.0-0t64 libatk-bridge2.0-0t64 \
       libatspi2.0-0t64 libcups2t64 libdrm2 libgbm1 libxkbcommon0 libxcomposite1 \
       libxdamage1 libxfixes3 libxrandr2 libx11-6 libxcb1 libxext6 libxi6 libxrender1 \
       libdbus-1-3 libexpat1 libsystemd0 libglib2.0-0 \
-      fonts-liberation poppler-utils gosu \
+      fonts-liberation fonts-crosextra-carlito poppler-utils gosu \
     && mkdir -p /opt/chrome \
     && wget -qO /tmp/chs.zip "https://storage.googleapis.com/chrome-for-testing-public/157.0.8103.38/linux64/chrome-headless-shell-linux64.zip" \
     && unzip -q /tmp/chs.zip -d /tmp/chs \
