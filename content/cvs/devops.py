@@ -2,7 +2,7 @@
 CV = {
     "id": "devops",
     "file": "DevOps",
-    "outputs": [("en", "ats"), ("vi", "visual")],
+    "outputs": [("en", "ats"), ("en", "visual"), ("vi", "visual")],
 
     "title_en": "DevOps Engineer — Docker / Linux / CI-CD",
     "title_vi": "Kỹ sư DevOps — Docker / Linux / CI-CD",

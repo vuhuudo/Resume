@@ -16,7 +16,7 @@ Nội dung được viết một lần, sinh ra nhiều bản theo **role** và 
 
 - **`_EN_ATS.pdf`** — 1 cột, không ảnh/icon: an toàn khi nộp qua hệ thống tuyển dụng (ATS), LinkedIn, ITviec/TopCV.
 - **`_VI_Visual.pdf`** — 2 cột, có ảnh: gửi email hoặc gặp trực tiếp nhà tuyển dụng Việt Nam.
-- **`cv/fullstack/CV_VuHuuDo_FullStack_EN_Visual.pdf`** — bản EN 2 cột (gửi email cho nhà tuyển dụng nước ngoài).
+- **`_EN_Visual.pdf`** — bản EN 2 cột, có ảnh: gửi email cho nhà tuyển dụng nước ngoài / người đọc tiếng Anh (có ở cả 6 role, vd: `cv/fullstack/CV_VuHuuDo_FullStack_EN_Visual.pdf`).
 - **`cv/linkedin/CV_VuHuuDo_LinkedIn.pdf`** — bản export từ LinkedIn (tham chiếu).
 
 ## Web app (C# / Docker)

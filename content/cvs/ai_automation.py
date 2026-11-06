@@ -2,7 +2,7 @@
 CV = {
     "id": "ai-automation",
     "file": "AIAutomation",
-    "outputs": [("en", "ats"), ("vi", "visual")],
+    "outputs": [("en", "ats"), ("en", "visual"), ("vi", "visual")],
 
     "title_en": "AI &amp; Automation Engineer — Python / LLM APIs",
     "title_vi": "Kỹ sư AI &amp; Tự động hóa — Python / LLM API",

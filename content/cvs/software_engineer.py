@@ -2,7 +2,7 @@
 CV = {
     "id": "software-engineer",
     "file": "SoftwareEngineer",
-    "outputs": [("en", "ats"), ("vi", "visual")],
+    "outputs": [("en", "ats"), ("en", "visual"), ("vi", "visual")],
 
     "title_en": "Software Engineer — Full Stack &amp; Platform",
     "title_vi": "Kỹ sư phần mềm — Full Stack &amp; Nền tảng",

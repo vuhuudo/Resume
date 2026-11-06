@@ -2,7 +2,7 @@
 CV = {
     "id": "backend-dotnet",
     "file": "BackendDotNet",
-    "outputs": [("en", "ats"), ("vi", "visual")],
+    "outputs": [("en", "ats"), ("en", "visual"), ("vi", "visual")],
 
     "title_en": "Backend Developer — .NET / C#",
     "title_vi": "Lập trình viên Backend — .NET / C#",

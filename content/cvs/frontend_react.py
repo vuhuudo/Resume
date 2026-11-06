@@ -2,7 +2,7 @@
 CV = {
     "id": "frontend-react",
     "file": "FrontendReact",
-    "outputs": [("en", "ats"), ("vi", "visual")],
+    "outputs": [("en", "ats"), ("en", "visual"), ("vi", "visual")],
 
     "title_en": "Frontend Developer — React / TypeScript",
     "title_vi": "Lập trình viên Frontend — React / TypeScript",

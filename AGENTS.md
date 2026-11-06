@@ -83,5 +83,5 @@ Repo có thể công khai. Ví dụ "trước/sau" chỉ dùng **tên giả** (C
 ## Khi sửa code
 
 - Python: chỉ stdlib + `textual` (TUI). C#: chỉ BCL + ASP.NET Core, không thêm NuGet nếu không cần.
-- Sau khi sửa: `uv run cvtui.py --check`, `uv run build.py` (13 PDF phải `[OK]`), và `cd webapp && dotnet build`.
+- Sau khi sửa: `uv run cvtui.py --check`, `uv run build.py` (18 PDF phải `[OK]`), và `cd webapp && dotnet build`.
 - `templates/` là nguồn trình bày dùng chung cho `build.py`, `cvtui.py` và web app — sửa một chỗ, cả ba cùng đổi.
